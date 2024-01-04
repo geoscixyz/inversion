@@ -1,0 +1,21 @@
+version: 1
+project:
+  title: inversion
+site:
+  title: inversion
+  projects:
+    - path: .
+      slug: inversion
+    - path: content
+      slug: content
+  nav:
+    - title: inversion
+      url: /inversion
+    - title: Inversion module
+      url: /content
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains: []
+  logo: public/logo.svg
+  logoText: inversion

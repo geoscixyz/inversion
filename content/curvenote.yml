@@ -1,0 +1,27 @@
+version: 1
+project:
+  title: Inversion module
+  description: ''
+  remote: VNMrkxzChhdveZyf6lmb
+  authors:
+    - userId: kJ1wjvSFymWWBKGfgdlwXFWwwkw2
+      name: Douglas Oldenburg
+      corresponding: false
+      roles:
+        - Conceptualization
+      affiliations:
+        - University of British Columbia
+    - userId: uGKcpSd8C8Ngzg9FusKDcQp0kIb2
+      name: Lindsey Heagy
+      orcid: 0000-0002-1551-5926
+      corresponding: false
+      roles:
+        - Writing – original draft
+      affiliations:
+        - University of British Columbia
+  name: inversion-module
+  open_access: true
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  subject: Inversion Module
