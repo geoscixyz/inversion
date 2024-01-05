@@ -1,0 +1,44 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/index
+parts:
+  - caption: Chapters
+    chapters:
+      - file: content/inverse-theory-overview
+        sections:
+          - file: content/geophysical-experiments
+          - file: content/introduction-to-inversion
+          - file: content/forward-mapping
+          - file: content/inverse-problem-fundamental-challenges
+            sections:
+              - file: content/exercise-ill-conditioning-non-uniqueness
+          - file: content/solving-an-ill-posed-problem
+          - file: content/theory-summary
+      - file: content/linear-tikhonov-inversion
+        sections:
+          - file: content/forward-problem
+          - file: content/statement-of-the-inverse-problem
+          - file: content/data-misfit
+          - file: content/nonuniqueness
+          - file: content/model-norm
+          - file: content/objective-function-for-the-inverse-problem
+            sections:
+              - file: content/exercise-linear-tikhonov-inversion
+          - file: content/summary-linear-inversion
+      - file: content/inversion-with-svd
+      - file: content/linear-l2-norm-inverson
+        sections:
+          - file: content/linearinversion-app
+      - file: content/nonlinear-inversion
+  - caption: Notebooks
+    chapters:
+      - file: content/rms-to-interval-velocity
+      - file: content/rms-to-interval-velocity-figures
+      - file: content/linear-tikhonov-inversion-notebook
+      - file: content/2d-crosswell-tomography
+      - file: content/time-domain-cyl-forward
+  - caption: Reference
+    chapters:
+      - file: content/equation-index

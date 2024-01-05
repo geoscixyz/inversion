@@ -3,15 +3,17 @@ title: Inversion with SVD
 description: ''
 date: '2021-03-08T22:43:15.613Z'
 name: inversion-with-svd
+venue: Inversion with SVD
 oxa: oxa:VNMrkxzChhdveZyf6lmb/USqfjE3Naoc2aE60TB28
 tags: []
+keywords: []
 ---
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/fq7UMbsL4qiBKwEVL8dL.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/fq7UMbsL4qiBKwEVL8dL.1","tags":[]}
 
 Fundamental understanding about non-uniqueness and ill-conditioning of the linear inverse problem is readily achieved with the aid of Singular Value Decomposition (SVD). In this chapter we show how this decomposition ……
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/pTk3XNR6MHbTlZO53TfJ.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/pTk3XNR6MHbTlZO53TfJ.1","tags":[]}
 
 # Recall
 
@@ -63,7 +65,7 @@ Typically $M>N$ creating an underdetermined problem, which has infinitely many s
 
 In this chapter we consider the question: How do we understand and deal with these elements?
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/dhA62zqa7KeMhmdCeBHh.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/dhA62zqa7KeMhmdCeBHh.1","tags":[]}
 
 # Solving $\mathbf{Gm}=\mathbf{d}$
 
@@ -71,7 +73,7 @@ Given $\mathbf{Gm}=\mathbf{d}$ and knowing $\mathbf{G}\in\R^{N\times M}$, $\math
 
 For example, if we write $Gm=d$ as $m_1+2m_2=2$ such that $G=[1,2]$, $d=2$, and $m=(m_1,m_2)^T$ and consider $m=G^{-1}d$.
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/KzvyCZTmXHqih4U7Bm2E.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/KzvyCZTmXHqih4U7Bm2E.1","tags":[]}
 
 # Singular Value Decomposition
 
@@ -93,11 +95,11 @@ $\mathbf{V}_p =\begin{pmatrix} |& & | \\ \mathbf{v}_1 & \dots & \mathbf{v}_p\\ |
 :width: 70%
 ```
 
-$\mathbf{m}^{\parallel}$\: activated portion of the model space
+$\mathbf{m}^{\parallel}$: activated portion of the model space
 
-$\mathbf{m}^{\perp}$\: annihilator space
+$\mathbf{m}^{\perp}$: annihilator space
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/szZtTOGPMD45hNRU5y85.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/szZtTOGPMD45hNRU5y85.1","tags":[]}
 
 ## Solving with SVD
 
@@ -125,7 +127,7 @@ $\phi_m=\|\mathbf{m}\|^2$
 
 $\mathbf{m}_c=\sum^p_{i=1}\left(\frac{\mathbf{u}_i^T\mathbf{d}}{\lambda_i}\right)\mathbf{v}_i$
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/cZ94ok80H1vO52eoVpg6.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/cZ94ok80H1vO52eoVpg6.1","tags":[]}
 
 ## Ill-conditionedness
 
@@ -139,7 +141,7 @@ Small singular value $\leftrightarrow$ highly oscillatory, large amplitude of no
 :width: 70%
 ```
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/5OAKjacU8FF7Oy8E0Hav.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/5OAKjacU8FF7Oy8E0Hav.1","tags":[]}
 
 ## Truncated SVD
 
@@ -163,7 +165,7 @@ Truncated SVD treats/takes care of issues caused by non-uniqueness and ill-condi
 :width: 70%
 ```
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/5r5zjZO17kVqbgjAan8m.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/5r5zjZO17kVqbgjAan8m.1","tags":[]}
 
 ## Consider Tikhonov Solution
 
@@ -195,7 +197,7 @@ Solve $\mathbf{Am}=\mathbf{b}$, letting $\mathbf{A}=\mathbf{G}^T\mathbf{G}+\beta
 :width: 70%
 ```
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/u9rcqwtNIqmxGeqCwbve.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/u9rcqwtNIqmxGeqCwbve.1","tags":[]}
 
 ### Tikhonov, TSVD, weighted TSVD
 
@@ -217,7 +219,7 @@ $t_i=\frac{\lambda_i^2}{\lambda_i^2+\beta}$
 :width: 70%
 ```
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/LK5qEMF3oDJCsrCdXkSz.1"}
++++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/LK5qEMF3oDJCsrCdXkSz.1","tags":[]}
 
 # Summary
 
@@ -252,4 +254,3 @@ A full data set can recover information about $\mathbf{m}^{\parallel}$
 The regularized solution is in a reduced region of the model space
 
 The geophysical model lies outside of this region. To explore that we need to incorporate more information.
-
