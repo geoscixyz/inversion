@@ -15,7 +15,7 @@ Although all of our computations for solving the inverse problem are done using 
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/s6G5GBmzkACaVMesCwQW.4","tags":[]}
 
-### 2.6.1. Smallest Model Norm
+### Smallest Model Norm
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/hptZlzW1HfA6qBTD3N54.4","tags":[]}
 
@@ -31,7 +31,7 @@ This norm penalizes the amplitude difference between the sought model $m$ and th
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/bnA45YXqCAIa26ekWFAJ.2","tags":[]}
 
-### 2.6.2. Flattest Model Norm
+### Flattest Model Norm
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/V0RZ0YR4ZH7hHSIFgXMR.4","tags":[]}
 
@@ -47,7 +47,7 @@ This norm penalizes derivatives and reduces the amount of structure in the final
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/gY2E8FqgRyZQipsdTSsF.5","tags":[]}
 
-### 2.6.3. Combined Norms
+### Combined Norms
 
 In most cases we desire a model that is close to a prescribed reference model and is also smooth. Mathematically this can be accomplished by combining the above two norms in a single objective function
 

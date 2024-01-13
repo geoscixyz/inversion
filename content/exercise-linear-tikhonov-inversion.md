@@ -2,18 +2,10 @@
 title: 'Exercise 2: Linear Tikhonov Inversion'
 description: ''
 date: '2021-07-27T21:40:39.390Z'
-name: exercise-linear-tikhonov-inversion
 venue: Linear Tikhonov Inversion
-oxa: oxa:VNMrkxzChhdveZyf6lmb/RqZEtlNRUGIEmADmEFHd
-tags: []
-keywords: []
 ---
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/cn7xYi7rFN83vZPOqXsr.12","tags":[]}
-
 In this investigation you can explore the components of a 1D synthetic inversion example, starting with model building, defining the kernel function, then forward modelling the data, adding noise, and finally inverting the data to recover a model. Specific instances of these components have been shown throughout the text above, and can be reproduced in the Jupyter notebook [LinearTikhonovInversion_Notebook.ipynb](oxa:VNMrkxzChhdveZyf6lmb/lb7CgEnVPzfs79VcKpB1 'LinearTikhonovInversion_Notebook.ipynb'). The corresponding notebook [LinearTikhonovInversion_App.ipynb](oxa:VNMrkxzChhdveZyf6lmb/8gDAkt6Yn0QN26MssI0p 'LinearTikhonovInversion_App.ipynb') contains the interactive widgets that allow you to adjust parameters and view results for the following.
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/pcJkkRWWTJ57WlbonrJZ.1","tags":[]}
 
 ## Forward Problem
 
@@ -34,8 +26,6 @@ The concepts about forward modelling can be explored individually in Steps 1-3, 
 - **Step 3 - Simulate data and add noise**
   - _Consider different noise levels_
     - _When is the data dominated by the noise rather than signal from the model?_
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/5brthjYabJBhlwizwJRB.1","tags":[]}
 
 ## Inverse Problem
 
@@ -81,7 +71,5 @@ The numerical details regarding how we obtain a solution to the inverse problem 
   - Recall the target data misfit value is $\phi_d^*=\chi_{fact}N$, thus when $\chi_{fact}=1$ the expected value of the misfit is the number of data $N$ ({eq}`198b31c2`)
   - _How does the model change when the inversion overfits the data_ $(\chi_{fact}<<1)$?
   - _How does the model change when the inversion underfits the data_ $(\chi_{fact}>>1)$?
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/ktobej3ViGF4zIsgYfEy.1","tags":[]}
 
 The Jupyter notebooks associated with this investigation can be downloaded and run locally or run through the Binder link at the top of the notebooks. More details on this can be found in [Getting Started - Jupyter Notebook Apps](oxa:VNMrkxzChhdveZyf6lmb/txiA7lIdCWcNNYh4xduj 'Getting Started - Jupyter Notebook Apps').

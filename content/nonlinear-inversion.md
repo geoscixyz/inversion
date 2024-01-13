@@ -2,29 +2,17 @@
 title: Nonlinear Inversion
 description: ''
 date: '2021-02-10T05:04:54.876Z'
-name: nonlinear-inversion
 venue: nonlinear inversion
-oxa: oxa:VNMrkxzChhdveZyf6lmb/RpEHZD8RmtVqbnbvz2UW
-tags: []
-keywords: []
 thumbnail: thumbnails/nonlinear-inversion.png
 ---
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/m0onsPFIQcBg7nnKiEtA.2","tags":[]}
-
 In the previous sections we showed how observations from a linear system can be inverted to generate a candidate for the underlying model $m$ that produced the data. The model was found by minimizing an objective function composed of a misfit and regularization function. When both terms were represented as a sum of squares, the objective function is quadratic, and the solution can be found by solving a linear system of equations. In practise, things are often more complicated. This occurs when the mapping in the forward problem, $d=F[m]$, is non-linear, or when a non-quadratic regularization or misfit function is desired. In this case the objective function is non-quadratic and it likely has multiple local minima as well as the desired global minimum. There are many ways to attack this problem and some excellent references are (eg XXXX). In our work we will use iterative techniques where we start at a guessed solution and compute a perturbation step that takes us towards a nearest local minimum.
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/uBpdWFKxovg4CGTFfaZ2.2","tags":[]}
-
 In this chapter we …..
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/BzrtD3LpyVTpBCUoFrXv.2","tags":[]}
 
 ## Linear Inversion Review
 
 The inverse problem is set to minimize the objective function $\phi=\phi_d+\beta\phi_m$ with the data misfit function $\phi_d=\sum^N_{j=1}\left(\frac{\mathcal{F}_j(m)-d_j^{obs}}{\varepsilon_j}\right)^2$. For the linear problem, the forward problem is defined as $\mathbf{d}=\mathbf{Gm}$, and we make use of quadratic regularization $\int_v\left(m-m_{ref}\right)^2dv$ so as to solve the problem in one step.
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/a8DYmKhFpIV654jhtXqZ.2","tags":[]}
 
 ## Non-linear Inversion
 
@@ -34,19 +22,13 @@ The inverse problem becomes non-linear in any of the following cases:
 - when the data misfit $\phi_d$ is not defined using an $l_2$-norm, e.g. $\sum\left|\frac{\mathcal{F}_i[m]-d_i}{\varepsilon_i}\right|$
 - when the model objective function is not quadratic
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/jinSPCJL0YSc0aEUwmru.2","tags":[]}
-
 ### Forward
 
 The forward problem is defined as $d=\mathcal{F}[m]$. If the forward operation is a linear operator, $\mathbf{d}=\mathbf{Gm}$, but if it is non-linear then $\mathcal{F}[am_1+bm_1] \neq a\mathcal{F}[m_1]+b\mathcal{F}[m_2]$. Such examples of non-linear problems include seismic, Maxwell’s first order wave equation, and DC resistivity.
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/FMliUY0ER6FB6yT2Od93.2","tags":[]}
-
 ### Inverse Problem
 
 We now solve an optimization problem to minimize the objective function $\phi(m)=\phi_d+\beta\phi_m(m)$. Step 1 is to discretize the PDE and solve the forward problem, then Step 2 is to iterate until a suitable model is found.
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/GTEyG2CkAR4UcmKjaTk4.3","tags":[]}
 
 ### Non-linear Optimization
 
@@ -78,8 +60,6 @@ where there are now multiple minimums, as shown below.
 :width: 40%
 ```
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/pesYfX50979COFhTtfHg.3","tags":[]}
-
 #### Newton’s Method
 
 1. Begin with an initial guess of the minimum, $x_k$ along the non-quadratic function we want to minimize, $\mathcal{f}$.
@@ -107,8 +87,6 @@ Things can go wrong with $\delta x=-\frac{\mathcal{f}\prime(x_k)}{\mathcal{f}\pr
 
 If we move in the wrong direction, we likely have negative curvature $\left(-\mathcal{f}\prime\prime(x)\right)$ and should instead use only the gradient $\delta x = c\mathcal{f}\prime (x)$, where $c$ is a constant. We choose $c$ such that $\left|\mathcal{f}(x+\delta x)-\mathcal{f}(x)\right|>\varepsilon$. It is also possible to move in the correct direction, but the curvature $\mathcal{f}\prime\prime(x)$ is wrong, indicating that our step length $\alpha$ is too large. We can change $\alpha$ and scale the step, so the updated guess $x_{k+1}=x_k+\alpha\delta x$ where $\alpha<1$.
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/wYVzJd0NBUjJqWtlsGUU.2","tags":[]}
-
 #### Convergence Conditions
 
 - $\mathcal{f}\prime(x)<$ tolerance
@@ -120,8 +98,6 @@ If we move in the wrong direction, we likely have negative curvature $\left(-\ma
 :align: center
 :width: 40%
 ```
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/X0faIneBUQyGfUUbE95M.2","tags":[]}
 
 #### Summary (Newton’s Method)
 
@@ -150,8 +126,6 @@ Non-linear
 - $\delta x=-\frac{\mathcal{f}\prime(x_k)}{\mathcal{f}\prime\prime(x_k)}$
 - $x_{k+1}=x_k+\alpha\delta x, ~ \alpha<1$
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/9wTkivD1Wp11RoXxA7jc.1","tags":[]}
-
 ### Multivariate functions
 
 - Minimize $\phi(m), ~ m\in\{m_1, m_2, \dots, m_M\}$
@@ -172,15 +146,11 @@ $$\begin{aligned} H(m)&=\nabla_m\nabla^T_m\phi, ~H\in\R^{M\times M} \\ &=\begin{
 
 The minimum of the Hessian is defined such that $H(m^*)$ is positive definite.
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/Nbx2TafFOTjatznXZvgU.2","tags":[]}
-
 ### Finding a Solution
 
 1. Begin with an initial model $m^{(k)}$
 2. Solve $H\left(m^{(k)}\right)\delta m=-g\left(m^{(k)}\right), ~ \text{c.f.}\{\mathcal{f}\prime\prime(x)\delta x=\mathcal{f}\prime(x)\}$
 3. Update the model $m^{(k+1)}=m^{(k)}+\alpha\delta m$
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/cSs4mxW0FrRnfT00Hg7v.1","tags":[]}
 
 ### Our Inversion
 
@@ -206,8 +176,6 @@ Final:
 
 $$\begin{aligned} H\delta m &= -g\\ & \downarrow \\ \left(J^TJ+\beta\right)\delta m &=-\left(J^T\delta d+\beta m\right) \\ \delta d &= \mathcal{F}[m]-d^{obs}\end{aligned}$$
 
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/AvLVIxig1uLAqXXhMCbN.1","tags":[]}
-
 ### Linear v. Non-linear
 
 Non-linear Problem $\left(\mathcal{F}[m]=d\right)$:
@@ -219,8 +187,6 @@ Linear Problem $(Gm=d)$:
 $$\left(G^TG+\beta\right)\delta m=-\left(G^Td+\beta m\right)$$
 
 The sensitivity $J$ acts as a local linear for non-linear operator $J\delta m=\delta d$
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/dhcMYZvds7u2UwD3Uojg.1","tags":[]}
 
 ### General Algorithm
 
@@ -239,8 +205,6 @@ There are a variety of ways to solve the system and selecting $\beta$ beyond a l
 :align: center
 :width: 60%
 ```
-
-+++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/DLQkbqG42NGTmgIJJN3a.1","tags":[]}
 
 ### Summary
 
