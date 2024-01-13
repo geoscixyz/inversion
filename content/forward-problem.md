@@ -41,7 +41,7 @@ For our synthetic problem, we start by creating the function that we will later 
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/2L7K4fl4gBMQacD284lu.4","tags":[]}
 
-### 2.3.1. Mesh
+### Mesh
 
 In our next step we design a mesh on which our model is defined and on which all of the numerical computations are carried. We discretize our domain into $M$ cells of uniform thickness. If we think about the “x-direction” as being depth, then this discretization would be like having a layered earth.
 
@@ -59,7 +59,7 @@ Our “model” is now an M-length vector $\mathbf m = (m_1, m_2, …, m_M)$. In
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/qvGJ12IANr3L9Jk4UzMn.9","tags":[]}
 
-### 2.3.2. Kernels and Data
+### Kernels and Data
 
 Our goal is to carry out an experiment that produces data that are sensitive to the model shown in [Figure A](https://curvenote.com/oxa:VNMrkxzChhdveZyf6lmb/8WfrIYP5O9W6zakEQaa3.7). For our linear system ({eq}`f40ae85f`) this means choosing the kernel functions. In reality, these kernel functions are controlled by the governing physical equations and the specifics of the sources and receivers for the experiment. For our investigation we select oscillatory functions which decay with depth. These are chosen because they are mathematically easy to manipulate and they also have a connection with many geophysical surveys, for example, in a frequency domain electromagnetic survey a sinusoidal wave propagates into the earth and continually decays as energy is dissipated. The kernel $g_j(x)$ corresponding to $d_j$ is given by
 
@@ -141,7 +141,7 @@ $\mathbf{G}$ is an $N \times M$ matrix ($N$ data and $M$ model elements). Using 
 
 +++ {"oxa":"oxa:VNMrkxzChhdveZyf6lmb/BkSnNlITIGCWKaHVZM7F.3","tags":[]}
 
-### 2.3.3. Adding Noise
+### Adding Noise
 
 Until now, we have only calculated the data $\mathbf{d}$, but observed data $\mathbf{d}^{obs}$ contain additive noise,
 
