@@ -61,7 +61,7 @@ Let $f$ and $g$ be two elements of the model space and $\alpha$ and $\beta$ be t
 
 $$
 \label{eq:linear-mapping}
-\mathcal{F}[\alpha f+\beta g]=\alpha\mathcal{F}[f]+\beta\mathcal{F}[g]
+\mathcal{F}[\alpha m_1+\beta m_2]=\alpha\mathcal{F}[m_1]+\beta\mathcal{F}[m_2]
 $$
 
 When this does not hold, the mapping is said to be nonlinear.
