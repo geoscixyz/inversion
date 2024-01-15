@@ -132,7 +132,7 @@ Whereas in @fig:inverse-mapping the application of $\mathcal{F}^{-1}$ maps to a 
 :width: 40%
 ```
 
-The nonuniqueness is exacerbated when we have a finite number of data contaminated with noise. As shown in {numref}`Figure %s <R7LoaGMcurI6TlSKSRyH>` below there are now more ways to interpolate the data and each interpolation will produce a different $v_{int}(t)$.
+The nonuniqueness is exacerbated when we have a finite number of data contaminated with noise. As shown in @a1e83824 below there are now more ways to interpolate the data and each interpolation will produce a different $v_{int}(t)$.
 
 ```{figure} images/VNMrkxzChhdveZyf6lmb-OaY83EoVsmYutnckX6Db-v1.png
 :name: a1e83824

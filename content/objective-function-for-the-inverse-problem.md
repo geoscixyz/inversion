@@ -23,7 +23,7 @@ As a metaphorical example to understand the role of $\beta$ , we consider the op
 \phi=T+\beta F
 ```
 
-When $\beta → 0$ we minimize the time irrespective of the fuel consumption. The gas peddle is on the floor. When $\beta → \infin$ the driver wants to use the absolute minimum amount of fuel so the gas peddle is barely engaged. This is displayed in {numref}`Figure %s <d31AdH08dO30KTmaxlYO>` where both T and F are plotted as a function of $\beta$. It is customary have the $\beta$ axis extend from a high value $\beta_H$ to a low value $\beta_L$ and this is indicated in the first two plots. A plot of $T~\text{vs}~F$ is shown in the third plot of {numref}`Figure %s <d31AdH08dO30KTmaxlYO>`. This is a monotonic curve and each point on the curve corresponds to a single $\beta$.
+When $\beta → 0$ we minimize the time irrespective of the fuel consumption. The gas peddle is on the floor. When $\beta → \infty$ the driver wants to use the absolute minimum amount of fuel so the gas peddle is barely engaged. This is displayed in {numref}`Figure %s <d31AdH08dO30KTmaxlYO>` where both T and F are plotted as a function of $\beta$. It is customary have the $\beta$ axis extend from a high value $\beta_H$ to a low value $\beta_L$ and this is indicated in the first two plots. A plot of $T~\text{vs}~F$ is shown in the third plot of {numref}`Figure %s <d31AdH08dO30KTmaxlYO>`. This is a monotonic curve and each point on the curve corresponds to a single $\beta$.
 
 ```{figure} images/VNMrkxzChhdveZyf6lmb-d31AdH08dO30KTmaxlYO-v2.png
 :name: d31AdH08dO30KTmaxlYO

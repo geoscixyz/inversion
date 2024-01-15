@@ -63,7 +63,7 @@ The numerical details regarding how we obtain a solution to the inverse problem 
   - _Do you get the same model with different ranges of $\beta$ values?_
   - _What happens the range of $\beta$ values is too small? - try several small ranges_
   - _What happens if are only a few values of $\beta$ over a large range?_
-  - _Does the optimal value $\beta^_$ stay the same or similar when any of the changes in this investigation are made?\*
+  - _Does the optimal value {math}`\beta^*` stay the same or similar when any of the changes in this investigation are made?_
   - _In Explore mode view the $\phi_d~\text{vs}~\phi_m$ plot and adjust $\beta_i$ - similar to the examples in _[_2.7. Objective Function for the Inverse Problem_](oxa:VNMrkxzChhdveZyf6lmb/46OlD42gDBzA8SkHBwSK '2.7. Objective Function for the Inverse Problem')_-{numref}`Figure %s <LxF0fImli3FufWtnmAV5>` and {numref}`Figure %s <Hx4fVnPbS2LUU4eiZOLF>`_
   - _How does the model change when a $\beta$ that is too large is chosen? (overfitting the data)_
     - _How does the model change when a $\beta$ that is too small is chosen? (underfitting the data)_
